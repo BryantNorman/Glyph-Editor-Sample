@@ -15,7 +15,7 @@ body {
 
 .container {
     width: 800px;
-    height: auto;
+    height: 800px;
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
@@ -44,6 +44,7 @@ body {
 #outputText1 {
     text-align: justify;
     max-width: 45%;
+    height: auto;
     font-family: "CustomFont";
     border: 2px solid #333;
     padding: 0px;
