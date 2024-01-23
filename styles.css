@@ -1,3 +1,4 @@
+/* Font and body styles */
 @font-face {
     font-family: "CustomFont";
     src: url("digital-7.ttf") format("truetype");
@@ -11,30 +12,40 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
 }
 
 .main-heading {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 36px;
     margin-bottom: 20px;
     color: #333;
 }
 
-.input textarea {
+/* Input textarea styles */
+.input p {
     width: 90%;
-    padding: 12px;
     margin-bottom: 20px;
+}
+
+textarea#textInput {
+    width: 100%;
+    padding: 12px;
     border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
     resize: vertical;
+    min-height: 100px;
 }
 
-.output p {
-    font-size: 30px;
-    text-align: justify;
-    max-width: 90%;
-    margin: 0 auto 20px;
+/* Output box styles */
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.output-box {
     font-family: "CustomFont";
     border: 2px solid #333;
     padding: 12px;
@@ -42,14 +53,26 @@ body {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    margin: 0; /* Remove margin between output boxes */
+    text-align: justify;
+    max-width: 100%; /* Adjust max-width to allow dynamic width change */
+    word-wrap: break-word;
+    hyphens: auto;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Slider styles */
 .slider {
-    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 label {
@@ -59,8 +82,7 @@ label {
 }
 
 input[type="range"] {
-    width: 90%;
-    max-width: 400px;
+    width: 100%;
     height: 10px;
     -webkit-appearance: none;
     appearance: none;
