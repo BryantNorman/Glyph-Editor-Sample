@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const textInput = document.getElementById("textInput");
-    const outputBox1 = document.getElementById("outputBox1");
-    const outputBox2 = document.getElementById("outputBox2");
     const spacingSlider = document.getElementById("spacingSlider");
     const widthSlider = document.getElementById("widthSlider");
     const heightSlider = document.getElementById("heightSlider");
@@ -17,8 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const line1 = lines[0] || "";
         const line2 = lines[1] || "";
 
-        outputBox1.textContent = line1;
-        outputBox2.textContent = line2;
+        const outputBox1 = document.getElementById("outputBox1");
+        const outputBox2 = document.getElementById("outputBox2");
+
+        outputBox1.innerHTML = `<span class="large-text">${line1}</span>`;
+        outputBox2.innerHTML = `<span class="skewed-text">${line2}</span>`;
 
         const spacingValue = spacingSlider.value;
         const widthValue = widthSlider.value;
@@ -32,8 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         outputBox1.style.letterSpacing = spacingValue + "px";
         outputBox2.style.letterSpacing = spacingValue + "px";
+
+        // Calculate margin to close the gap between the boxes
+        const boxMargin = heightValue - 200;
+        outputBox2.style.marginTop = boxMargin + "px";
     }
 
-    // Initial update
     updateOutputText();
 });

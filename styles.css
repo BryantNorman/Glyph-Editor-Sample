@@ -53,13 +53,14 @@ textarea#textInput {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    margin: 0; /* Remove margin between output boxes */
+    margin: 0;
     text-align: justify;
-    max-width: 100%; /* Adjust max-width to allow dynamic width change */
+    max-width: 100%;
     word-wrap: break-word;
     hyphens: auto;
     font-size: 30px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -109,4 +110,15 @@ input[type="range"]::-moz-range-thumb {
     border: 2px solid #fff;
     border-radius: 50%;
     cursor: pointer;
+}
+
+/* Additional styles for Happy and Birthday */
+.large-text {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.skewed-text {
+    font-size: 24px;
+    display: inline-block;
 }
