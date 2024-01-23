@@ -47,11 +47,11 @@ textarea#textInput {
 
 .output-box {
     font-family: "CustomFont";
-    border: 2px solid #333;
+    /* border: 2px solid #333; */
     padding: 12px;
     overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* background-color: #fff; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
     border-radius: 5px;
     margin: 0;
     text-align: justify;
@@ -115,10 +115,10 @@ input[type="range"]::-moz-range-thumb {
 /* Additional styles for Happy and Birthday */
 .large-text {
     font-size: 36px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .skewed-text {
-    font-size: 24px;
+    font-size: 22px;
     display: inline-block;
 }
