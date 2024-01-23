@@ -58,7 +58,7 @@ textarea#textInput {
     max-width: 100%;
     word-wrap: break-word;
     hyphens: auto;
-    font-size: 30px;
+    font-size: 38px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,15 +110,4 @@ input[type="range"]::-moz-range-thumb {
     border: 2px solid #fff;
     border-radius: 50%;
     cursor: pointer;
-}
-
-/* Additional styles for Happy and Birthday */
-.large-text {
-    font-size: 36px;
-    /* font-weight: bold; */
-}
-
-.skewed-text {
-    font-size: 22px;
-    display: inline-block;
 }
